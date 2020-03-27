@@ -1,0 +1,90 @@
+.hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: calc(100vh - 3.46rem)
+  padding-top: 90px
+  background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
+  color: $light
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
+  &__instagram
+    position: absolute
+    top: 0
+    left: 0
+    max-width: 80px
+    height: 100%
+  &__content
+    margin-left: 4.28rem
+    max-width: 47.85rem
+    position: relative
+    // animation: fadeInUp 1s ease 
+  &__title
+    margin-bottom: 1rem
+    font-family: 'Yeseva One', cursive
+    line-height: 1.35
+    text-transform: uppercase
+    font-size: 2.857rem
+    &_primary
+      color: $primary
+  &__text
+    margin-bottom: 3.15rem
+    max-width: 500px
+    line-height: 1.455
+    font-size: 1.57rem
+  &__button
+    margin-right: 20px
+    padding: 19px 32px
+  &__button.button_outline
+    padding: 19px 46px
+.scroll-down
+  position: absolute
+  left: 0
+  bottom: -3.46rem
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: 17.6rem
+  min-height: 6.92rem
+  background-color: $dark
+  &__link
+    font-family: 'Yeseva One', cursive
+    font-size: 0.857rem
+    text-transform: uppercase
+    text-decoration: none
+    color: $light
+  &::after
+    content: ''
+    background: url('../img/arrow-down.svg') center no-repeat
+    width: 30px
+    height: 30px
+    border: 2px solid $primary
+    border-radius: 50%
+    margin-left: 18px
+.instagram
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $dark
+  &__link
+    display: flex
+    align-items: center
+    font-size: 1.05rem
+    line-height: 0.8
+    text-transform: uppercase
+    text-decoration: none
+    color: $primary
+    transform: rotate(90deg)
+    &::after
+      content: ''
+      width: 50px
+      height: 1px
+      margin-left: 8px
+      background-color: $primary

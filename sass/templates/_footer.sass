@@ -1,0 +1,102 @@
+.footer
+  position: relative
+  padding-top: 19.642rem
+  padding-bottom: 4.714rem
+  background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
+  // z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
+    width: 100%
+    height: 100%
+    // z-index: 2
+  &__menu
+    position: relative
+    background-color: $dark
+    padding: 4.285rem 0
+  &__wrap
+    // position: relative
+    position: absolute
+    top: -15.892rem
+    left: 50%
+    transform: translateX(-50%)
+    margin: 0 auto
+    // margin-top: -15.892rem
+    margin-bottom: 3.714rem
+    padding: 2.5rem
+    max-width: 63.07rem
+    background-color: $black
+    z-index: 3
+  &__title
+    margin-bottom: 3.214rem
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428rem
+    text-transform: uppercase
+    text-align: center
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__subtitle
+    position: relative
+    margin: 0 auto
+    max-width: 42.071rem
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428rem
+    line-height: 2rem
+    text-transform: uppercase
+    text-align: center
+    color: $primary
+    z-index: 3
+  &__form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 37.142rem
+    margin: 0 auto
+  &__input
+    padding-top: 0.3rem
+    &-group
+      position: relative
+      display: flex
+      flex-direction: column
+      flex-basis: 45%
+      margin-bottom: 3.2rem
+      &_full-width
+        flex-basis: 100%
+        margin-bottom: 2rem
+  &__policy
+    flex-basis: 100%
+    margin-bottom: 3.6rem
+    & .invalid
+      left: 50%
+      transform: translateX(-50%)
+  &__button
+    margin: 0 auto
+    padding: 1.285rem 4.785rem
+  &__icons
+    position: relative
+    margin-top: 1.857rem
+    margin-bottom: 3.071rem
+    display: flex
+    justify-content: center
+    z-index: 3
+  &__icon-wrapper
+    margin-right: 15px
+    width: 28px
+    height: 28px
+    padding: 7px
+    background-color: $primary
+    border-radius: 50%
+  &__map
+    position: relative
+    width: 100%
+    min-height: 33.214rem
+    z-index: 3

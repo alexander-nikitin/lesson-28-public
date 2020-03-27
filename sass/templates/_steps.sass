@@ -1,0 +1,70 @@
+.swiper
+  &-slide
+    &__text
+      &_steps
+        max-width: 24.071rem
+        font-size: 1.07rem
+        line-height: 1.785rem
+    &__heading
+      &_steps
+        width: 100%
+        margin-bottom: 1.142rem
+        font-size: 1.07rem
+        line-height: 1.642rem
+        text-transform: uppercase
+        color: $primary
+.step-fraction__number
+  margin-bottom: 1.571rem
+.steps
+  padding-top: 0
+  padding-bottom: 28.928rem
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-top: 6.429rem
+  &__item
+    width: 32%
+    margin-bottom: 2.571rem
+    opacity: 0.3
+    cursor: pointer
+    &.active
+      opacity: 1
+  &__number
+    position: relative
+    display: block
+    margin-bottom: 1.07rem
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -3px
+      width: 16px
+      height: 1px
+      background-color: $primary
+  &__text
+    max-width: 136px
+.swiper-container-steps
+  position: relative
+  padding-bottom: 4.268rem
+.swiper-button-prev-steps
+  position: absolute
+  bottom: 1px
+  top: auto
+  width: 42px
+  height: 14px
+  background-size: 42px
+  left: 0
+  background: url(../img/projects/arrow-prev.svg) center no-repeat
+  cursor: pointer
+.swiper-button-next-steps
+  position: absolute
+  bottom: 0px
+  top: auto
+  width: 42px
+  height: 14px
+  background-size: 42px
+  background: url(../img/projects/arrow-next.svg) center no-repeat
+  cursor: pointer
+.swiper-pagination-steps
+  position: absolute

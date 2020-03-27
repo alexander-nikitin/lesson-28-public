@@ -1,0 +1,68 @@
+*, *::before, *::after 
+  box-sizing: border-box
+  outline: none
+html
+  font-size: 14px
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 14px
+h1, h2, h3, p 
+  font-style: normal
+  font-weight: normal
+  margin: 0
+img
+  max-width: 100%
+.section
+  padding: 60px 0
+  &_dark
+    background-color: $dark
+    color: $light
+  &-title
+    text-align: center
+    visibility: hidden
+    &.animate
+      visibility: visible
+    &_left
+      text-align: left
+    &_light
+      color: $light
+    &_steps
+      margin-bottom: 6.571rem
+    &__heading
+      margin: 1rem 0
+      font-family: 'Yeseva One', cursive
+      font-weight: normal
+      text-transform: uppercase
+      line-height: 2.642rem
+      &_primary
+        color: $primary
+    &__subtitle
+      margin-bottom: 1.285rem
+      font-size: 1.07rem
+      line-height: 1.5rem
+      color: $light
+      text-transform: uppercase
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 2px
+        margin-left: 2rem
+        background-color: $primary
+    &__text
+      margin-bottom: 3rem
+      max-width: 31.57rem
+      font-size: 1.28rem
+      line-height: 2.07rem
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+      &::after, &::before
+        content: ''
+        width: 23px
+        height: 2px
+        margin: 0 10px
+        background-color: $primary

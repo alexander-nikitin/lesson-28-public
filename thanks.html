@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson 26 php</title>
+  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d67d7f48-422e-48a6-ab00-277e204c7d58&lang=ru_RU" type="text/javascript">
+  </script>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <a href="index.html" class="logo">Repair Design Project</a>
+        <nav class="nav">
+          <a href="#" class="nav__link">Главная</a>
+          <a href="#" class="nav__link">Проекты</a>
+          <a href="#" class="nav__link">Замер</a>
+          <a href="#" class="nav__link">Команда</a>
+          <a href="#" class="nav__link">Отзывы</a>
+          <a href="#" class="nav__link">Контакты</a>
+        </nav>
+        <div class="contacts header__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button_primary" data-toggle='modal'>Заказать звонок</button>
+          <!-- ./contacts -->
+        </div>
+      </div>
+      <!-- /.menu -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <main>
+    <section class="hero">
+      <div class="instagram hero__instagram">
+        <a href="#" class="instagram__link">Instagram</a>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Спасибо за заявку</h1>
+          <p class="hero__text">Наш менеджер перезвонит вам в течении 10 минут</p>
+        </div>
+        <!-- ./hero__content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+  </main>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="user-name" class="label form__label label_light">Имя</label>
+          <input type="text" name="userName" class="input form__imput modal__input input_light" id="user-name" placeholder="Как вас зовут:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-phone" class="label form__label label_light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__imput modal__input input_light" id="user-phone" placeholder="Ваш номер телефона:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="user-email" class="label form__label label_light">Email</label>
+          <input type="email" name="userEmail" class="input form__imput modal__input input_light" id="user-email" placeholder="Ваш email">
+        </div>
+        <div class="policy modal__policy">
+          <input type="checkbox" name="policy-checkbox" id="policy-checkbox-modal" class="policy__checkbox">
+          <label for="policy-checkbox-modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
+        </div>
+        <!-- /.policy -->
+        <button class="button modal__button button_primary">Отправить заявку</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
